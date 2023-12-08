@@ -1,0 +1,13 @@
+---
+- hosts: localhost
+  gather_facts: no
+  tasks: 
+    - name: Complex variables example
+      community.general.terraform:
+        project_path: "./"
+        state: present
+        force_init: true
+
+    # - name: Loop to import devices.  This calls a sub task for processing
+    #   include_tasks: snow-col-config-import.yml
+    #   register: update_hw
