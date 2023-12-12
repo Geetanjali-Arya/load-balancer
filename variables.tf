@@ -4,11 +4,11 @@ variable "region" {
 }
 variable "access_key" {
     type = string
-    default = "AKIAWRVHACO5NN6LCGCE"
+    default = ""
 }
 variable "secret_key" {
     type = string
-    default = "LjFl0sAE/mFt/WMtOcP6OnSfqtTU07kuO/XT57if"
+    default = ""
 }
 variable "ami_id" {
   type = map
